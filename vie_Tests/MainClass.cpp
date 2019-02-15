@@ -29,5 +29,5 @@ void MainClass::render(vie::Graphics* g)
 
 	g->setColor(vie::COLOR::RED);
 	for (auto p : points)
-		g->fillRect(p, glm::vec2(8, 8));
+		g->fillRect(p - glm::vec2(4, 4), glm::vec2(8, 8));
 }
